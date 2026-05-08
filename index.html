@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Tech</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <link rel="stylesheet" href="./css/suporte.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+            <div style="display: flex; gap: 30px;">
+                <button class="menu-botao">
+                    <img src="./img/menu.png" alt="">
+                </button>
+                <h1 class="titulo">Double Tech</h1>
+            </div>
+            <nav>
+                <a class="links redirecionamentos" data-target="chat">Chat</a>
+                <a class="links redirecionamentos" data-target="suporte">Suporte Premium</a>
+                <a class="links redirecionamentos" data-target="sobre">Sobre</a>
+                <a class="links redirecionamentos" data-target="contato">Contato</a>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn"><span class="pagina-atual" style="text-transform: capitalize;">Chat</span> ▾</button>
+
+                <div class="dropdown-content">
+                    <a class="redirecionamentos-dropmenu" data-target="chat">Chat</a>
+                    <a class="redirecionamentos-dropmenu" data-target="suporte">Suporte Premium</a>
+                    <a class="redirecionamentos-dropmenu" data-target="sobre">Sobre</a>
+                    <a class="redirecionamentos-dropmenu" data-target="contato">Contato</a>
+                </div>
+            </div>
+    </header>
+    <main>
+        <aside class="aside">
+            <button class="menu-botao aside-menu-botao">
+                <img src="./img/close.png" alt="">
+            </button>
+            <div class="aside-head">
+                <h1>Suporte Técnico</h1>
+                <h2>Soluções rápidas para seu PC</h2>
+            </div>
+            <div class="opcoes">
+                <div class="aside-items">
+                    <h3 style="margin-bottom: 10px;">Diagnósticos</h3>
+                    <div class="funcionalidades redirecionamentos" data-target="pc">
+                        <img src="./img/computador.png" alt="">
+                        <a class="funcionalidades-link">PC lento</a>
+                    </div>
+                    <div class="funcionalidades redirecionamentos" data-target="internet">
+                        <img src="./img/internet.png" alt="">
+                        <a class="funcionalidades-link">Internet</a>
+                    </div>
+                    <div class="funcionalidades redirecionamentos" data-target="erros">
+                        <img src="./img/risco.png" alt="">
+                        <a class="funcionalidades-link">Erros do sistema</a>
+                    </div>
+                </div>
+            </div> 
+        </aside>
+
+        <!-- ============================== CHAT IA ============================== -->
+
+        <section class="chat sections">
+
+
+
+            <div class="container" style="height: 100%;">
+                <div id="chat"></div>
+                <div class="duvida">
+                    
+                        <button class="action-icon icones" type="button">
+                        <img src="./img/midias.png" alt="Anexar" style="filter: invert(1);">
+                        </button>
+                        
+                    <textarea
+                        id="msg"
+                        placeholder="Pergunte algo..."
+                        rows="1"
+                        autocomplete="off"
+                    ></textarea>
+                    
+                    <button class="icones fundo-icone" id="send-btn" disabled>
+                        <img src="./img/envio.png" alt="Enviar">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== SUPORTE ============================== -->
+
+        <section class="suporte sections fechado">
+            <div class="container">
+                <div class="suporte-head">
+                    <h1>Vantagens</h1>
+                    <p>Explore os benefícios exclusivos do Suporte Premium da Double Tech. Garantimos performance, segurança e disponibilidade total para sua máquina.</p>
+                </div>
+                <div class="vantagens">
+                    <div class="vantagem-head">
+                        <div class="vantagem-icone" id="vatagem1">
+                            <img src="./img/processador.png" alt="">
+                        </div>
+                        <h3>FixBot</h3><br />
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards">
+                            <h2><span style="color: #3B82F6; margin-right: 5px;">●</span> Consultas Ilimitadas</h2>
+                            <p>Esqueça os contadores de mensagens. No Suporte Premium, você tem liberdade total para tirar todas as suas dúvidas, realizar diagnósticos profundos e solicitar orientações quantas vezes precisar, sem interrupções ou bloqueios.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #3B82F6; margin-right: 5px;">●</span> Disponibilidade Integral (24/7)</h2>
+                            <p>Diferente do suporte humano, nossa IA não dorme. Você tem um especialista digital à disposição em qualquer horário do dia ou da noite, garantindo que nenhum erro de sistema te deixe parado por muito tempo.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #3B82F6; margin-right: 5px;">●</span> Respostas Instantâneas e Precisas</h2>
+                            <p>Com prioridade de processamento, a IA Premium analisa seus problemas de hardware e software com velocidade máxima, entregando soluções passo a passo baseadas nas melhores práticas de suporte técnico.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #3B82F6; margin-right: 5px;">●</span> Histórico e Contexto Avançado</h2>
+                            <p>A IA mantém o contexto das suas interações anteriores, permitindo uma assistência personalizada que entende o histórico do seu PC e oferece diagnósticos muito mais assertivos e direcionados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vantagens">
+                    <div class="vantagem-head">
+                        <div class="vantagem-icone" id="vatagem2">
+                            <img src="./img/celular.png" alt="">
+                        </div>
+                        <h3>Acesso Remoto</h3><br />
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards">
+                            <h2><span style="color: #C084FC; margin-right: 5px;">●</span> Resolução Técnica Direta</h2>
+                            <p>Nossos especialistas assumem o controle do seu mouse e teclado para configurar softwares, remover malwares ou ajustar o sistema operacional, eliminando a necessidade de você seguir tutoriais complexos por conta própria.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #C084FC; margin-right: 5px;">●</span> Comodidade e Agilidade</h2>
+                            <p>Você não precisa levar seu equipamento a uma assistência física. O reparo é feito de onde você estiver, economizando tempo e garantindo que o seu computador volte a funcionar perfeitamente em poucos minutos.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #C084FC; margin-right: 5px;">●</span> Diagnóstico Preciso em Tempo Real</h2>
+                            <p>Ao observar o comportamento do sistema diretamente, o técnico consegue identificar falhas que muitas vezes são difíceis de descrever por chat, resultando em um conserto muito mais assertivo e seguro.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #C084FC; margin-right: 5px;">●</span> Instalações e Atualizações Assistidas</h2>
+                            <p>Se você tem dificuldade em instalar drivers, programas específicos ou atualizações críticas do Windows, nossa equipe realiza todo o processo de forma profissional, garantindo que tudo seja configurado corretamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vantagens">
+                    <div class="vantagem-head">
+                        <div class="vantagem-icone" id="vatagem3">
+                            <img src="./img/pc-torre.png" alt="">
+                        </div>
+                        <h3>Check-up Mensal</h3><br />
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards">
+                            <h2><span style="color: #fdba63; margin-right: 5px;">●</span> Manutenção Preventiva</h2>
+                            <p>Realizamos uma análise completa do seu sistema uma vez por mês para identificar e corrigir pequenos erros antes que eles se tornem problemas graves ou causem lentidão no seu dia a dia.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #fdba63; margin-right: 5px;">●</span> Otimização de Performance</h2>
+                            <p>Limpeza de arquivos temporários, desfragmentação de disco (quando necessário) e ajuste de programas que iniciam com o Windows, garantindo que seu PC opere sempre na velocidade máxima.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #fdba63; margin-right: 5px;">●</span> Monitoramento de Hardware</h2>
+                            <p>Verificação da integridade do disco rígido (HD/SSD) e das temperaturas dos componentes, prevenindo falhas físicas inesperadas e prolongando a vida útil do seu computador.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #fdba63; margin-right: 5px;">●</span> Relatório de Saúde</h2>
+                            <p>Ao final de cada check-up, você recebe um resumo detalhado das ações realizadas e do estado atual da sua máquina, mantendo você sempre informado sobre a saúde do seu equipamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vantagens">
+                    <div class="vantagem-head">
+                        <div class="vantagem-icone" id="vatagem4">
+                            <img src="./img/segurança.png" alt="">
+                        </div>
+                        <h3>Segurança Avançada</h3><br />
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards">
+                            <h2><span style="color: #75ff9f; margin-right: 5px;">●</span> Proteção em Tempo Real</h2>
+                            <p>Monitoramento constante contra vírus, ransomwares e spywares, bloqueando ameaças antes mesmo que elas consigam infectar seus arquivos ou comprometer sua privacidade.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #75ff9f; margin-right: 5px;">●</span> Navegação Blindada</h2>
+                            <p>Filtros de segurança que identificam sites maliciosos e tentativas de phishing, garantindo que suas transações bancárias e compras online sejam realizadas em um ambiente totalmente seguro.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #75ff9f; margin-right: 5px;">●</span> Backup Prioritário na Nuvem</h2>
+                            <p>Proteção para seus documentos mais importantes com cópias de segurança automáticas e criptografadas, assegurando que você nunca perca seus dados em caso de falha no hardware.</p>
+                        </div>
+                        <div class="cards">
+                            <h2><span style="color: #75ff9f; margin-right: 5px;">●</span> Varredura de Vulnerabilidades</h2>
+                            <p>Identificação de brechas de segurança em softwares desatualizados e configurações do sistema, com correções imediatas para manter sua máquina protegida contra ataques externos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <!-- ============================== SOBRE ============================== -->
+
+        <section class="sobre sections fechado">
+                
+        </section>
+        
+        <!-- ============================== CONTATO ============================== -->
+        
+        <section class="contato sections fechado">
+            <h1>OAISDAS</h1>
+        </section>
+
+        <!-- ============================== PC LENTO ============================== -->
+        
+        <section class="pc sections fechado">
+            <h1>WDQWDWQDW</h1>
+        </section>
+
+        <!-- ============================== INTERNET ============================== -->
+        
+        <section class="internet sections fechado">
+            <h1>DCSADSA</h1>
+        </section>
+
+        <!-- ============================== ERROS NO SISTEMA ============================== -->
+        
+        <section class="erros sections fechado">
+            <h1>SGDA2!213</h1>
+        </section>
+
+    </main>
+
+        <!-- //////////////////////////////////////////// LINKS //////////////////////////////////////////// -->
+
+    <script src="./js/script.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+.suporte{
+    overflow-y: scroll;
+    color: rgb(213, 213, 213);
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+    padding: 60px;
+    display: flex;
+    
+    
+    .suporte::-webkit-scrollbar{
+        width: 8px;
+    }
+
+    .suporte::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+
+    h3{
+        font-weight: normal;
+        font-size: 1.6em;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 60px 0;
+}
+
+.suporte-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        width: 70%;
+        font-size: 1.1em;
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    padding: 50px 40px;
+    border: 1px solid #ffffff17;
+    border-radius: 8px;
+    line-height: 1.8;
+    gap: 20px;
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+.vantagem-head {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.vantagem-icone {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 30px;
+    }
+}
+
+#vatagem1 {
+    background-color: #151C28
+}
+
+#vatagem2 {
+    background-color: #201828;
+}
+
+#vatagem3 {
+    background-color: rgb(253, 186, 99, 0.2);
+}
+
+#vatagem4 {
+    background-color: rgb(117, 255, 159, 0.2);
+}
